@@ -1,9 +1,5 @@
 {
-  "author": {
-    "name": "Patrik Simek",
-    "url": "https://patriksimek.cz"
-  },
-  "name": "vm2",
+  "name": "@flowease/vm2",
   "description": "vm2 is a sandbox that can run untrusted code with whitelisted Node's built-in modules. Securely!",
   "keywords": [
     "sandbox",
@@ -13,10 +9,10 @@
     "alcatraz",
     "contextify"
   ],
-  "version": "3.9.19",
+  "version": "3.9.23",
   "main": "index.js",
   "sideEffects": false,
-  "repository": "github:patriksimek/vm2",
+  "repository": "github:khulnasoft-lab/vm2",
   "license": "MIT",
   "dependencies": {
     "acorn": "^8.7.0",
@@ -28,8 +24,10 @@
     "mocha": "^6.2.2"
   },
   "engines": {
-    "node": ">=6.0"
+    "node": ">=18.10",
+    "pnpm": ">=8.6.12"
   },
+  "packageManager": "pnpm@8.6.12",
   "scripts": {
     "test": "mocha test",
     "pretest": "eslint ."
